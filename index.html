@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grab A Byte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Grab A Byte</h1>
+    <p>Your favorite meals delivered fast!</p>
+  </header>
+
+  <section class="menu">
+    <div class="item">
+      <h3>Pizza</h3>
+      <p>Delicious cheese pizza</p>
+      <button onclick="addToCart('Pizza', 10)">Add to Cart ($10)</button>
+    </div>
+    <div class="item">
+      <h3>Burger</h3>
+      <p>Juicy grilled burger</p>
+      <button onclick="addToCart('Burger', 8)">Add to Cart ($8)</button>
+    </div>
+    <div class="item">
+      <h3>Pasta</h3>
+      <p>Italian style pasta</p>
+      <button onclick="addToCart('Pasta', 12)">Add to Cart ($12)</button>
+    </div>
+    <div class="item">
+      <h3>Sushi</h3>
+      <p>Fresh salmon sushi rolls</p>
+      <button onclick="addToCart('Sushi', 15)">Add to Cart ($15)</button>
+    </div>
+    <div class="item">
+      <h3>Salad</h3>
+      <p>Healthy mixed greens</p>
+      <button onclick="addToCart('Salad', 7)">Add to Cart ($7)</button>
+    </div>
+    <div class="item">
+      <h3>Steak</h3>
+      <p>Grilled ribeye steak</p>
+      <button onclick="addToCart('Steak', 20)">Add to Cart ($20)</button>
+    </div>
+    <div class="item">
+      <h3>Ice Cream</h3>
+      <p>Creamy vanilla scoop</p>
+      <button onclick="addToCart('Ice Cream', 5)">Add to Cart ($5)</button>
+    </div>
+    <div class="item">
+      <h3>Fries</h3>
+      <p>Crispy golden fries</p>
+      <button onclick="addToCart('Fries', 4)">Add to Cart ($4)</button>
+    </div>
+    <div class="item">
+      <h3>Tacos</h3>
+      <p>Spicy chicken tacos</p>
+      <button onclick="addToCart('Tacos', 9)">Add to Cart ($9)</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-list"></ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button id="clear-cart" onclick="clearCart()">Clear Cart</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
